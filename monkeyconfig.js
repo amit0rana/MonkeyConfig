@@ -307,10 +307,6 @@ function MonkeyConfig() {
         
         if (data.onSave)
             data.onSave(values);
-
-        if (data.onSave) {
-            data.onSave();
-        }
     }
     
     /**
