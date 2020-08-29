@@ -345,6 +345,12 @@ function MonkeyConfig() {
             if (button = container.querySelector('#__MonkeyConfig_button_defaults'))
                 button.addEventListener('click', defaultsClick, true);
             
+            document.body.addEventListener('keyup', function(e) {
+                if (e.key == "Escape") {
+                    cancelClick();
+                }
+            });
+
             displayed = true;
             update();
         }
