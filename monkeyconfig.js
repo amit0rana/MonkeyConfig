@@ -614,7 +614,7 @@ MonkeyConfig.HTML = {
         if (options.choices.constructor == Array) {
             /* options.choices is an array -- build key/value pairs */
             for (var i = 0; i < options.choices.length; i++)
-                choices[options.choices[i]] = options.choices[i];
+option                choices[options.values[i]] = options.choices[i];
         }
         else
             /* options.choices is an object -- use it as it is */
